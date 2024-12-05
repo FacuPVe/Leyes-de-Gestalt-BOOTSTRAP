@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-// Agregar páginas
+import Ley from './pages/LeyesGestalt';
+import NotFound from './pages/NotFound';
 
 const App = () => {
   return (
@@ -11,7 +12,8 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* Rutas */}
+        <Route path="/leyes/:id" element={<Ley />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </Router>

@@ -32,14 +32,19 @@ Currently, two official plugins are available:
 ## Bootstrap
 Instalación de la última versión a través del administrador de paquetes:
 ```
-npm install bootstrap@5.3.3
+npm install bootstrap @popperjs/core
+
 ```
 Una vez acabada la instalación, vamos a nuestro archivo .css principal para incluir Bootstrap:
 ```css
 @import "bootstrap/dist/css/bootstrap.min.css";
 ```
-
-# React Router
+Y para asegurarnos de que Bootstrap se ejecute correctamente, nos aseguramos de tener los siguientes imports en main.jsx:
+```
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+```
+## React Router
 Instalación de biblioteca React Router para el manejo de rutas:
 ```
 npm install react-router-dom
